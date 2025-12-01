@@ -1,0 +1,59 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #rgb(115, 88, 235)
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+main {
+  padding: 2rem;
+}
+
+.contenido-largo {
+  height: 150vh;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Botón "Ir arriba" */
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: hsl(318, 82%, 52%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.btn-top:hover {
+  background-color: #59d0ee;
+}
+
+.btn-top:focus {
+  outline: 2px solid #ff046d;
+  outline-offset: 2px;
+}

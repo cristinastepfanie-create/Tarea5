@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de Botones HTML</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Tutorial: Dominando los Botones</h1>
+    </header>
+    <main>        
+        <div class="contenido-largo">
+            
+            <hr>
+            
+            <h2>1. ¿Cómo crear un botón básico?</h2>
+            <p>La forma más moderna y recomendada es usar la etiqueta <code>&lt;button&gt;</code>. A diferencia de los antiguos inputs, esta etiqueta te permite incluir texto, iconos o imágenes dentro.</p>
+            <p>Ejemplo de código:</p>
+            <pre>&lt;button&gt;Haz Clic&lt;/button&gt;</pre>
+            <p>Es importante siempre definir el atributo <strong>type</strong> para saber qué hace el botón.</p>
+            <br><br>
+
+            <h2>2. Los tipos de botones (Attribute Type)</h2>
+            <p>Existen tres valores principales para el atributo type que debes conocer:</p>
+            <ul>
+                <li><strong>type="submit":</strong> Envía formularios. Es el valor por defecto.</li>
+                <li><strong>type="reset":</strong> Borra el contenido de un formulario.</li>
+                <li><strong>type="button":</strong> No hace nada por sí solo. Se usa con JavaScript (como el botón de subir que usaremos al final).</li>
+            </ul>
+            <br><br><br>
+
+            <h2>3. Dando estilos con CSS (Básico)</h2>
+            <p>Los botones por defecto se ven grises y aburridos. Para arreglarlos, usamos CSS. Las propiedades más comunes son:</p>
+            <p><strong>background-color:</strong> Cambia el color de fondo.</p>
+            <p><strong>color:</strong> Cambia el color del texto.</p>
+            <p><strong>padding:</strong> Agrega espacio interno para que el botón se vea más grande.</p>
+            <p><strong>border-radius:</strong> Redondea las esquinas.</p>
+            <br><br><br>
+
+            <h2>4. Estados del botón (:hover y :active)</h2>
+            <p>Para que el botón se sienta interactivo, usamos "pseudo-clases" en CSS:</p>
+            <p><strong>button:hover</strong> -> Define cómo se ve el botón cuando pasas el mouse por encima (ej. cambiar el color un poco más oscuro).</p>
+            <p><strong>button:active</strong> -> Define cómo se ve cuando lo estás presionando (ej. moverlo un poco hacia abajo).</p>
+            <br><br><br>
+
+            <h2>5. Accesibilidad</h2>
+            <p>Nunca olvides la accesibilidad. Asegúrate de que el contraste entre el texto y el fondo sea suficiente para que personas con problemas de visión puedan leerlo.</p>
+            <p>También usa el atributo <code>aria-label</code> si el botón solo tiene un icono y no texto, para que los lectores de pantalla sepan qué hace.</p>
+            <br><br><br>
+    </main>
+
+    <button id="btnTop" class="btn-top">Ir arriba</button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
